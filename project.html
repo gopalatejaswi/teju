@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #132E35;
+            overflow: hidden;
+            /* Hide overflowing content */
+        }
+
+        .bubble-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .blue-bubble {
+            position: absolute;
+            width: 250px;
+            /* Adjust the width as needed */
+            height: 250px;
+            /* Adjust the height as needed */
+            background-color: rgba(224, 144, 83, 0.7);
+            /* Adjust the alpha channel as needed */
+            border-radius: 50%;
+            animation: float 5s infinite linear;
+        }
+
+        .bubble1 {
+            top: 20%;
+            right: 5%;
+        }
+
+        .bubble2 {
+            top: 50%;
+            right: 25%;
+        }
+
+        .bubble3 {
+            top: 40%;
+            right: 13%;
+        }
+
+        .bubble4 {
+            top: 60%;
+            right: 2%;
+        }
+
+        .bubble5 {
+            top: 70%;
+            right: 15%;
+        }
+
+        .bubble6 {
+            top: 40%;
+            right: 1%;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .content-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, -50%);
+            color: white;
+            text-align: left;
+            /* Align text to the left */
+            width: 40%;
+            /* Adjust the width as needed */
+            padding-right: 3vh;
+            font-size: 14.5px;
+            /* Increase font size for better visibility */
+        }
+
+        .protfolio-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            /* Ensure the navigation is on top */
+        }
+
+        .navlist {
+            display: flex;
+            gap: 3.5rem;
+            height: 15%;
+        }
+
+        .navlist li {
+            list-style: none;
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bubble-container">
+        <div class="blue-bubble bubble1"></div>
+        <div class="blue-bubble bubble2"></div>
+        <div class="blue-bubble bubble3"></div>
+        <div class="blue-bubble bubble4"></div>
+        <div class="blue-bubble bubble5"></div>
+        <div class="blue-bubble bubble6"></div>
+    </div>
+    <div class="protfolio-container">
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content-container">
+        <!-- Your content goes here -->
+        <br>
+        <br><br><br><br>
+        <h2><p style="color: #E09053;">Project</p></h2>
+        <br>
+        <h4>.Telegram Chatbot</h4>
+        <p>--Tech Stack : Created Telegram ChatBot using Html,CSS,Dialogflow, database integration as a part of the Full Stack Web Development Course.</p>
+        <p>-- Telegram chatbot is personal chatbot.</p>
+        <br>
+        <h4>.Food website along with chatbot</h4>
+        <p>--Techstack: HTML,CSS</p>
+        <p>--From this website we can order food and can also find what is the total amount.</p><br>
+        <h4>.Conway's game of life</h4>
+        <p>--Techstack : Python,pygame</p>
+        <p>--Evolution is determined by its initial state, requiring no further input.</p>
+        <br><h4>.Amazon Clone</h4>
+        <p>--Techstack : HTML,CSS</p>
+        <p>--The front-end representation of how Amazon's website look.</p>
+        <br> <h4>.Lung cancer prediction</h4>
+        <p>--Techstack : ML,DL</p>  
+        <p>--In this we can detect whether the patient is having lung cancer or not.</p>
+        <br><h4>.Friend(ongoing)</h4>
+        <p>--Techstack : NLP(ML,DL)</p>
+        <p>--voice assitant which can speak like a friend.</p>
+    </div>
+</body>
+</html>
